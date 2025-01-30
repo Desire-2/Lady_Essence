@@ -3,6 +3,7 @@ from database import init_db, save_parent, save_child, get_children, update_acco
 from guidance import save_planetary_guidance, fetch_nutrition_guidance
 from helpers import calculate_cycle_dates
 from datetime import datetime
+from planetal_care import save_meal, get_meal_history, get_nutrition_guidance
 
 app = Flask(__name__)
 
@@ -17,8 +18,11 @@ def ussd_callback():
 
     if text == "":
         response = "CON Murakaza neza muri Sisitemu (<b>Lady’s Essence</b>)\n"
-        response += "1. Ndi Umubyeyi\n"
-        response += "2. Ndi Umwangavu/Ushakashaka\n"
+        response += "1. Ndi Umubyeyi/Ndashaka kwandikisha abavanndimwe\n"
+        response += "2. Ndi Umwangavu\n"
+        response += "3. Ndatwite\n"
+        response += "4. Ndashaka kuvugana na muganga\n"
+        response += "5. Nahuye nihohoterwa"
     elif text == "1":
         response = "CON Murakaza neza ku rubuga rw'ababyeyi:\n"
         response += "1. Gukurikirana igihe cy'ukwezi kwanjye\n"
@@ -134,6 +138,31 @@ def ussd_callback():
             response = f"END Murakoze! Amakuru ajyanye n'{details[2]} :\n{guidance}"
         else:
             response = "END Hari ikibazo mu kwinjiza amakuru yawe."
+
+    elif text == "3":
+        response = "CON Murakaza neza ku rubuga rw'abatwite:\n"
+        response += "1. Gushaka ubufasha mumirire\n"
+    elif text == "3*1":
+        response = "CON Enter what you ate today:"
+    elif text.startswith("3*1*"):
+        meal = text.split("*", 2)[-1]
+        save_meal(phone_number, meal)
+        meal_history = get_meal_history(phone_number)
+        guidance = get_nutrition_guidance(meal_history)
+        response = f"END Based on your recent meals, we recommend: {guidance}"
+
+    elif text == "4":
+        response = "CON Murakaza neza ku rubuga rw'abaganga:\n"
+        response += "1. Kugisha inama\n"
+        response += "2. Nkeneye ubufasha bwihutirwa\n"
+    elif text == "4*1":
+        response = "END Mwihangane iyi serivice iracyatunganywa neza."
+    elif text == "4*2":
+        response = "END Mwihangane iyi serivice iracyatunganywa neza."
+
+    elif text == "5":
+        response = "CON Niba Wahuye nihohoterwa hamagara\n Kubuntu(Nimero iticyurwa ariyo): <b>3029<b> \n Cyangwa nimero isanzwe ariyo: <b>0788267884/ \n 0782797015 <b>\n Ushobora no kutwoherereza ubutumwa ukoresheje Email ariyo: <b>francoiseuwamriya050@gmail.com<b>\n"
+
     else:
         response = "END Amahitamo si yo. Gerageza ubundi."
 
