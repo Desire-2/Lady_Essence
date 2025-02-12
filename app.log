@@ -1,0 +1,306 @@
+2025-01-30 08:45:40,181 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 08:45:40,181 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 08:45:40,182 - INFO -  * Restarting with stat
+2025-01-30 08:45:40,762 - WARNING -  * Debugger is active!
+2025-01-30 08:45:40,771 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 08:57:04,792 - INFO - 127.0.0.1 - - [30/Jan/2025 08:57:04] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 08:57:14,405 - INFO - 127.0.0.1 - - [30/Jan/2025 08:57:14] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 08:57:26,077 - INFO - 127.0.0.1 - - [30/Jan/2025 08:57:26] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 08:57:36,847 - INFO - 127.0.0.1 - - [30/Jan/2025 08:57:36] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 08:57:43,384 - INFO - 127.0.0.1 - - [30/Jan/2025 08:57:43] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 08:58:12,669 - INFO - 127.0.0.1 - - [30/Jan/2025 08:58:12] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 08:58:43,285 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 08:58:43,285 - INFO - 127.0.0.1 - - [30/Jan/2025 08:58:43] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 08:58:49,404 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 08:58:49,405 - INFO - 127.0.0.1 - - [30/Jan/2025 08:58:49] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 08:58:57,527 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 08:58:57,528 - INFO - 127.0.0.1 - - [30/Jan/2025 08:58:57] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 08:59:35,370 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 08:59:35,371 - INFO - 127.0.0.1 - - [30/Jan/2025 08:59:35] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:02:47,946 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 09:02:47,946 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 09:02:47,947 - INFO -  * Restarting with stat
+2025-01-30 09:02:48,525 - WARNING -  * Debugger is active!
+2025-01-30 09:02:48,532 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 09:03:03,506 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:03:03,507 - INFO - 127.0.0.1 - - [30/Jan/2025 09:03:03] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:03:14,357 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:03:14,358 - INFO - 127.0.0.1 - - [30/Jan/2025 09:03:14] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:07:41,812 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-30 09:07:41,999 - INFO -  * Restarting with stat
+2025-01-30 09:07:42,647 - WARNING -  * Debugger is active!
+2025-01-30 09:07:42,650 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 09:07:43,665 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-30 09:07:43,816 - INFO -  * Restarting with stat
+2025-01-30 09:07:44,494 - WARNING -  * Debugger is active!
+2025-01-30 09:07:44,498 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 09:08:12,714 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-30 09:08:12,907 - INFO -  * Restarting with stat
+2025-01-30 09:08:13,594 - WARNING -  * Debugger is active!
+2025-01-30 09:08:13,598 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 09:08:59,984 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-30 09:09:00,145 - INFO -  * Restarting with stat
+2025-01-30 09:09:00,756 - WARNING -  * Debugger is active!
+2025-01-30 09:09:00,759 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 09:09:11,029 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 09:09:11,029 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 09:09:11,030 - INFO -  * Restarting with stat
+2025-01-30 09:09:11,609 - WARNING -  * Debugger is active!
+2025-01-30 09:09:11,612 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 09:09:24,124 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:09:24,126 - INFO - 127.0.0.1 - - [30/Jan/2025 09:09:24] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:12:07,628 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:12:07,629 - INFO - 127.0.0.1 - - [30/Jan/2025 09:12:07] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:12:12,444 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:12:12,445 - INFO - 127.0.0.1 - - [30/Jan/2025 09:12:12] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:12:59,269 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:12:59,270 - INFO - 127.0.0.1 - - [30/Jan/2025 09:12:59] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:13:03,481 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:13:03,481 - INFO - 127.0.0.1 - - [30/Jan/2025 09:13:03] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:13:33,573 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/app.py', reloading
+2025-01-30 09:13:33,751 - INFO -  * Restarting with stat
+2025-01-30 09:13:34,370 - WARNING -  * Debugger is active!
+2025-01-30 09:13:34,372 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 09:15:11,264 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-01-30 09:15:11,266 - INFO - 127.0.0.1 - - [30/Jan/2025 09:15:11] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:21:43,821 - INFO - 127.0.0.1 - - [30/Jan/2025 09:21:43] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:21:49,195 - INFO - 127.0.0.1 - - [30/Jan/2025 09:21:49] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:21:54,314 - INFO - 127.0.0.1 - - [30/Jan/2025 09:21:54] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:22:03,323 - INFO - 127.0.0.1 - - [30/Jan/2025 09:22:03] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:22:16,236 - INFO - 127.0.0.1 - - [30/Jan/2025 09:22:16] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:22:22,143 - INFO - 127.0.0.1 - - [30/Jan/2025 09:22:22] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:22:28,864 - INFO - 127.0.0.1 - - [30/Jan/2025 09:22:28] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:22:36,299 - INFO - 127.0.0.1 - - [30/Jan/2025 09:22:36] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:22:48,269 - ERROR - An error occurred: HTTPSConnectionPool(host='api.nutritionix.com', port=443): Max retries exceeded with url: /v1/search/mmm (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7578ead58f20>: Failed to resolve 'api.nutritionix.com' ([Errno -5] No address associated with hostname)"))
+2025-01-30 09:22:48,270 - INFO - 127.0.0.1 - - [30/Jan/2025 09:22:48] "[35m[1mPOST /ussd HTTP/1.1[0m" 500 -
+2025-01-30 09:22:54,422 - INFO - 127.0.0.1 - - [30/Jan/2025 09:22:54] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:23:05,994 - INFO - 127.0.0.1 - - [30/Jan/2025 09:23:05] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 09:23:14,495 - INFO - 127.0.0.1 - - [30/Jan/2025 09:23:14] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 10:13:55,493 - INFO - 127.0.0.1 - - [30/Jan/2025 10:13:55] "POST /ussd HTTP/1.1" 200 -
+2025-01-30 10:37:07,544 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-30 10:37:07,738 - INFO -  * Restarting with stat
+2025-01-30 11:19:02,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 11:19:02,260 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 11:19:02,262 - INFO -  * Restarting with stat
+2025-01-30 11:19:03,220 - WARNING -  * Debugger is active!
+2025-01-30 11:19:03,227 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 11:39:20,784 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/database.py', reloading
+2025-01-30 11:39:21,013 - INFO -  * Restarting with stat
+2025-01-30 11:39:22,012 - WARNING -  * Debugger is active!
+2025-01-30 11:39:22,028 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 11:39:54,343 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/database.py', reloading
+2025-01-30 11:39:54,673 - INFO -  * Restarting with stat
+2025-01-30 11:39:56,047 - WARNING -  * Debugger is active!
+2025-01-30 11:39:56,056 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 11:40:06,524 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 11:40:06,525 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 11:40:06,526 - INFO -  * Restarting with stat
+2025-01-30 11:40:07,915 - WARNING -  * Debugger is active!
+2025-01-30 11:40:07,943 - INFO -  * Debugger PIN: 965-402-207
+2025-01-30 11:44:10,792 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 11:44:10,792 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 11:44:10,793 - INFO -  * Restarting with stat
+2025-01-30 11:44:11,415 - WARNING -  * Debugger is active!
+2025-01-30 11:44:11,423 - INFO -  * Debugger PIN: 115-439-695
+2025-01-30 16:00:02,740 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 16:00:02,740 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 16:00:02,742 - INFO -  * Restarting with stat
+2025-01-30 16:00:03,923 - WARNING -  * Debugger is active!
+2025-01-30 16:00:03,934 - INFO -  * Debugger PIN: 770-701-215
+2025-01-30 17:00:48,689 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 17:00:48,689 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 17:00:48,690 - INFO -  * Restarting with stat
+2025-01-30 17:00:49,242 - WARNING -  * Debugger is active!
+2025-01-30 17:00:49,273 - INFO -  * Debugger PIN: 224-891-725
+2025-01-30 17:05:04,222 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 17:05:04,222 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 17:05:04,223 - INFO -  * Restarting with stat
+2025-01-30 17:05:05,237 - WARNING -  * Debugger is active!
+2025-01-30 17:05:05,242 - INFO -  * Debugger PIN: 224-891-725
+2025-01-31 11:05:14,556 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-31 11:05:14,556 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 11:05:14,557 - INFO -  * Restarting with stat
+2025-01-31 11:05:15,189 - WARNING -  * Debugger is active!
+2025-01-31 11:05:15,196 - INFO -  * Debugger PIN: 409-924-527
+2025-01-31 11:13:39,163 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-31 11:13:40,292 - INFO -  * Restarting with stat
+2025-01-31 11:13:42,178 - WARNING -  * Debugger is active!
+2025-01-31 11:13:42,185 - INFO -  * Debugger PIN: 409-924-527
+2025-01-31 11:13:46,252 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-31 11:13:46,565 - INFO -  * Restarting with stat
+2025-01-31 11:13:47,344 - WARNING -  * Debugger is active!
+2025-01-31 11:13:47,348 - INFO -  * Debugger PIN: 409-924-527
+2025-01-31 11:13:50,384 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-31 11:13:50,534 - INFO -  * Restarting with stat
+2025-01-31 11:13:51,176 - WARNING -  * Debugger is active!
+2025-01-31 11:13:51,179 - INFO -  * Debugger PIN: 409-924-527
+2025-01-31 11:14:07,980 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-31 11:14:07,980 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 11:14:07,981 - INFO -  * Restarting with stat
+2025-01-31 11:14:08,597 - WARNING -  * Debugger is active!
+2025-01-31 11:14:08,600 - INFO -  * Debugger PIN: 409-924-527
+2025-01-31 11:34:51,505 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-01-31 11:34:52,184 - INFO -  * Restarting with stat
+2025-01-31 11:34:53,272 - WARNING -  * Debugger is active!
+2025-01-31 11:34:53,278 - INFO -  * Debugger PIN: 409-924-527
+2025-02-01 19:08:48,201 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-01 19:08:48,202 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-01 19:08:48,203 - INFO -  * Restarting with stat
+2025-02-01 19:08:48,941 - WARNING -  * Debugger is active!
+2025-02-01 19:08:48,950 - INFO -  * Debugger PIN: 137-611-726
+2025-02-02 18:05:37,603 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-02 18:05:37,603 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 18:05:37,605 - INFO -  * Restarting with stat
+2025-02-02 18:05:38,173 - WARNING -  * Debugger is active!
+2025-02-02 18:05:38,178 - INFO -  * Debugger PIN: 776-606-718
+2025-02-08 13:52:18,114 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-08 13:52:18,115 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 13:52:18,116 - INFO -  * Restarting with stat
+2025-02-08 13:52:19,124 - WARNING -  * Debugger is active!
+2025-02-08 13:52:19,133 - INFO -  * Debugger PIN: 848-759-050
+2025-02-12 09:37:20,148 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-12 09:37:20,148 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-12 09:37:20,150 - INFO -  * Restarting with stat
+2025-02-12 09:37:21,185 - WARNING -  * Debugger is active!
+2025-02-12 09:37:21,193 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 10:39:55,484 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-02-12 10:39:55,501 - INFO - 127.0.0.1 - - [12/Feb/2025 10:39:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-12 11:19:06,597 - INFO - 127.0.0.1 - - [12/Feb/2025 11:19:06] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:22:20,712 - INFO - 127.0.0.1 - - [12/Feb/2025 11:22:20] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:22:34,440 - INFO - 127.0.0.1 - - [12/Feb/2025 11:22:34] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:33:04,288 - INFO - 127.0.0.1 - - [12/Feb/2025 11:33:04] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:33:11,156 - INFO - 127.0.0.1 - - [12/Feb/2025 11:33:11] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:33:17,300 - INFO - 127.0.0.1 - - [12/Feb/2025 11:33:17] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:36:40,837 - INFO - 127.0.0.1 - - [12/Feb/2025 11:36:40] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:36:46,164 - INFO - 127.0.0.1 - - [12/Feb/2025 11:36:46] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:36:53,972 - INFO - 127.0.0.1 - - [12/Feb/2025 11:36:53] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:37:38,502 - INFO - 127.0.0.1 - - [12/Feb/2025 11:37:38] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:37:47,109 - INFO - 127.0.0.1 - - [12/Feb/2025 11:37:47] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:39:16,517 - INFO - 127.0.0.1 - - [12/Feb/2025 11:39:16] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:39:21,637 - INFO - 127.0.0.1 - - [12/Feb/2025 11:39:21] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:39:30,274 - INFO - 127.0.0.1 - - [12/Feb/2025 11:39:30] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:44:05,741 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 11:44:06,225 - INFO -  * Restarting with stat
+2025-02-12 11:44:07,583 - WARNING -  * Debugger is active!
+2025-02-12 11:44:07,590 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 11:44:15,666 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 11:44:15,881 - INFO -  * Restarting with stat
+2025-02-12 11:44:17,085 - WARNING -  * Debugger is active!
+2025-02-12 11:44:17,090 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 11:44:26,705 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-12 11:44:26,706 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-12 11:44:26,707 - INFO -  * Restarting with stat
+2025-02-12 11:44:27,741 - WARNING -  * Debugger is active!
+2025-02-12 11:44:27,746 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 11:45:46,927 - INFO - 127.0.0.1 - - [12/Feb/2025 11:45:46] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:45:51,807 - INFO - 127.0.0.1 - - [12/Feb/2025 11:45:51] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:45:56,435 - INFO - 127.0.0.1 - - [12/Feb/2025 11:45:56] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:49:12,902 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 11:49:13,109 - INFO -  * Restarting with stat
+2025-02-12 11:49:14,225 - WARNING -  * Debugger is active!
+2025-02-12 11:49:14,232 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 11:49:22,840 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-12 11:49:22,840 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-12 11:49:22,841 - INFO -  * Restarting with stat
+2025-02-12 11:49:23,857 - WARNING -  * Debugger is active!
+2025-02-12 11:49:23,861 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 11:51:16,980 - INFO - 127.0.0.1 - - [12/Feb/2025 11:51:16] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:51:23,021 - INFO - 127.0.0.1 - - [12/Feb/2025 11:51:23] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:51:30,295 - INFO - 127.0.0.1 - - [12/Feb/2025 11:51:30] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:55:22,654 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 11:55:22,845 - INFO -  * Restarting with stat
+2025-02-12 11:55:24,010 - WARNING -  * Debugger is active!
+2025-02-12 11:55:24,019 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 11:55:28,206 - INFO - 127.0.0.1 - - [12/Feb/2025 11:55:28] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:55:33,730 - INFO - 127.0.0.1 - - [12/Feb/2025 11:55:33] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:55:50,545 - INFO - 127.0.0.1 - - [12/Feb/2025 11:55:50] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:56:15,619 - INFO - 127.0.0.1 - - [12/Feb/2025 11:56:15] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:56:24,492 - INFO - 127.0.0.1 - - [12/Feb/2025 11:56:24] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:56:28,687 - INFO - 127.0.0.1 - - [12/Feb/2025 11:56:28] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 11:56:36,425 - INFO - 127.0.0.1 - - [12/Feb/2025 11:56:36] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:31:14,809 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 12:31:15,304 - INFO -  * Restarting with stat
+2025-02-12 12:31:16,810 - WARNING -  * Debugger is active!
+2025-02-12 12:31:16,824 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 12:31:33,456 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-12 12:31:33,457 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-12 12:31:33,459 - INFO -  * Restarting with stat
+2025-02-12 12:31:34,574 - WARNING -  * Debugger is active!
+2025-02-12 12:31:34,587 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 12:48:00,356 - INFO - 127.0.0.1 - - [12/Feb/2025 12:48:00] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:48:07,912 - INFO - 127.0.0.1 - - [12/Feb/2025 12:48:07] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:48:13,303 - INFO - 127.0.0.1 - - [12/Feb/2025 12:48:13] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:48:25,942 - INFO - 127.0.0.1 - - [12/Feb/2025 12:48:25] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:48:51,146 - INFO - 127.0.0.1 - - [12/Feb/2025 12:48:51] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:49:07,926 - INFO - 127.0.0.1 - - [12/Feb/2025 12:49:07] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:49:16,119 - INFO - 127.0.0.1 - - [12/Feb/2025 12:49:16] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 12:49:28,099 - INFO - 127.0.0.1 - - [12/Feb/2025 12:49:28] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 13:21:32,563 - INFO - 127.0.0.1 - - [12/Feb/2025 13:21:32] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 13:21:36,716 - INFO - 127.0.0.1 - - [12/Feb/2025 13:21:36] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 13:21:42,122 - INFO - 127.0.0.1 - - [12/Feb/2025 13:21:42] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 13:21:52,661 - INFO - 127.0.0.1 - - [12/Feb/2025 13:21:52] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 13:32:07,436 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/database.py', reloading
+2025-02-12 13:32:07,734 - INFO -  * Restarting with stat
+2025-02-12 13:32:09,085 - WARNING -  * Debugger is active!
+2025-02-12 13:32:09,095 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 13:32:21,208 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 13:32:21,411 - INFO -  * Restarting with stat
+2025-02-12 13:32:22,554 - WARNING -  * Debugger is active!
+2025-02-12 13:32:22,560 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 13:34:17,465 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 13:34:17,677 - INFO -  * Restarting with stat
+2025-02-12 13:34:18,853 - WARNING -  * Debugger is active!
+2025-02-12 13:34:18,859 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 13:34:23,026 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-12 13:34:23,027 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-12 13:34:23,028 - INFO -  * Restarting with stat
+2025-02-12 13:34:24,057 - WARNING -  * Debugger is active!
+2025-02-12 13:34:24,061 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 14:21:18,075 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:18] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:21:22,886 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:22] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:21:27,279 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:27] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:21:31,698 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:31] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:21:42,291 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:42] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:21:46,369 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:46] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:21:50,943 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:50] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:21:59,015 - INFO - 127.0.0.1 - - [12/Feb/2025 14:21:59] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:22:04,696 - INFO - 127.0.0.1 - - [12/Feb/2025 14:22:04] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:22:08,792 - INFO - 127.0.0.1 - - [12/Feb/2025 14:22:08] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:22:15,213 - INFO - 127.0.0.1 - - [12/Feb/2025 14:22:15] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:22:19,060 - INFO - 127.0.0.1 - - [12/Feb/2025 14:22:19] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:23:23,119 - INFO -  * Detected change in '/home/desire/My_Project/USSD_Prompt/routes.py', reloading
+2025-02-12 14:23:23,322 - INFO -  * Restarting with stat
+2025-02-12 14:23:24,452 - WARNING -  * Debugger is active!
+2025-02-12 14:23:24,460 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 14:23:32,612 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-12 14:23:32,613 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-12 14:23:32,614 - INFO -  * Restarting with stat
+2025-02-12 14:23:33,781 - WARNING -  * Debugger is active!
+2025-02-12 14:23:33,785 - INFO -  * Debugger PIN: 740-268-689
+2025-02-12 14:23:44,718 - INFO - 127.0.0.1 - - [12/Feb/2025 14:23:44] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:23:49,790 - INFO - 127.0.0.1 - - [12/Feb/2025 14:23:49] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:23:52,799 - INFO - 127.0.0.1 - - [12/Feb/2025 14:23:52] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:23:56,792 - INFO - 127.0.0.1 - - [12/Feb/2025 14:23:56] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:24:06,828 - INFO - 127.0.0.1 - - [12/Feb/2025 14:24:06] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:24:20,313 - INFO - 127.0.0.1 - - [12/Feb/2025 14:24:20] "POST /ussd HTTP/1.1" 200 -
+2025-02-12 14:24:28,745 - INFO - 127.0.0.1 - - [12/Feb/2025 14:24:28] "POST /ussd HTTP/1.1" 200 -

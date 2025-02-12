@@ -1,157 +1,111 @@
-import sqlite3
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from models import Base, Parent, Child, Appointment, Feedback
+from werkzeug.security import generate_password_hash, check_password_hash
+from datetime import datetime
 
+# Database configuration
+DATABASE_URI = 'sqlite:///lady_essence.db'
+
+# Initialize the database
 def init_db():
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
+    engine = create_engine(DATABASE_URI)
+    Base.metadata.create_all(engine)
+    return engine
 
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            phone_number TEXT UNIQUE,
-            full_name TEXT,
-            is_parent INTEGER DEFAULT 0,
-            language TEXT DEFAULT 'Kinyarwanda',
-            sms_reminders INTEGER DEFAULT 0
-        )
-    """)
+# Create a session for database operations
+def get_session():
+    engine = init_db()
+    Session = sessionmaker(bind=engine)
+    return Session()
 
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS children (
-            child_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            parent_phone TEXT,
-            child_name TEXT,
-            cycle_length INTEGER,
-            last_period_date TEXT,
-            FOREIGN KEY(parent_phone) REFERENCES users(phone_number)
-        )
-    """)
+# Save a parent to the database
+def save_parent(phone_number, name, password):
+    session = get_session()
+    hashed_password = generate_password_hash(password)
+    parent = Parent(phone_number=phone_number, name=name, password_hash=hashed_password)
+    session.add(parent)
+    session.commit()
 
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS cycle_history (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            phone_number TEXT,
-            cycle_length INTEGER,
-            last_period_date TEXT,
-            next_period_date TEXT,
-            ovulation_date TEXT
-        )
-    """)
+# Save a child to the database
+def save_child(parent_phone, name, cycle_length, last_period_date):
+    session = get_session()
+    child = Child(parent_phone=parent_phone, name=name, cycle_length=cycle_length, last_period_date=last_period_date)
+    session.add(child)
+    session.commit()
 
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS feedback (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            phone_number TEXT,
-            feedback TEXT
-        )
-    """)
+# Fetch children for a parent
+def get_children(parent_phone):
+    session = get_session()
+    return session.query(Child).filter_by(parent_phone=parent_phone).all()
 
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS planetary_guidance (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            phone_number TEXT,
-            guidance TEXT
-        )
-    """)
+# Update a parent's account
+def update_account(phone_number, new_name):
+    session = get_session()
+    parent = session.query(Parent).filter_by(phone_number=phone_number).first()
+    if parent:
+        parent.name = new_name
+        session.commit()
 
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS nutrition_guidance (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            phone_number TEXT,
-            guidance TEXT
-        )
-    """)
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS meal_history (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            phone_number TEXT,
-            meal TEXT,
-            date TEXT
-        )
-    """)
-    
-                   
-
-    conn.commit()
-    conn.close()
-
-def save_parent(phone_number, full_name):
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
-    cursor.execute("""
-        INSERT OR IGNORE INTO users (phone_number, full_name, is_parent)
-        VALUES (?, ?, 1)
-    """, (phone_number, full_name))
-    conn.commit()
-    conn.close()
-
-def save_child(phone_number, child_name, cycle_length, last_period_date):
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
-    cursor.execute("""
-        INSERT INTO children (parent_phone, child_name, cycle_length, last_period_date)
-        VALUES (?, ?, ?, ?)
-    """, (phone_number, child_name, cycle_length, last_period_date))
-    conn.commit()
-    conn.close()
-
-def get_children(phone_number):
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
-    cursor.execute("""
-        SELECT * FROM children WHERE parent_phone = ?
-    """, (phone_number,))
-    children = cursor.fetchall()
-    conn.close()
-    return children
-
-def update_account(phone_number, full_name=None, language=None, sms_reminders=None):
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
-    updates = []
-    params = []
-    if full_name:
-        updates.append("full_name = ?")
-        params.append(full_name)
-    if language:
-        updates.append("language = ?")
-        params.append(language)
-    if sms_reminders is not None:
-        updates.append("sms_reminders = ?")
-        params.append(sms_reminders)
-    params.append(phone_number)
-    
-    if updates:
-        cursor.execute(f"""
-            UPDATE users SET {', '.join(updates)} WHERE phone_number = ?
-        """, params)
-        conn.commit()
-    conn.close()
-
+# Delete a parent's account
 def delete_account(phone_number):
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
-    cursor.execute("DELETE FROM users WHERE phone_number = ?", (phone_number,))
-    cursor.execute("DELETE FROM children WHERE parent_phone = ?", (phone_number,))
-    conn.commit()
-    conn.close()
+    session = get_session()
+    parent = session.query(Parent).filter_by(phone_number=phone_number).first()
+    if parent:
+        session.delete(parent)
+        session.commit()
 
-def get_dashboard_data(phone_number):
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM users WHERE phone_number = ?", (phone_number,))
-    user = cursor.fetchone()
+# Delete a child
+def delete_child(parent_phone, child_name):
+    session = get_session()
+    child = session.query(Child).filter_by(parent_phone=parent_phone, name=child_name).first()
+    if child:
+        session.delete(child)
+        session.commit()
 
-    cursor.execute("SELECT * FROM children WHERE parent_phone = ?", (phone_number,))
-    children = cursor.fetchall()
+# Authenticate a user
+def authenticate_user(phone_number, password):
+    session = get_session()
+    user = session.query(Parent).filter_by(phone_number=phone_number).first()
+    if user and check_password_hash(user.password_hash, password):
+        return True
+    return False
 
-    conn.close()
-    return user, children
+# In database.py
+def register_user(name, phone_number, password):
+    session = get_session()
+    hashed_password = generate_password_hash(password)
+    user = Parent(name=name, phone_number=phone_number, password_hash=hashed_password)
+    session.add(user)
+    session.commit()
 
-def delete_child(phone_number, child_id):
-    conn = sqlite3.connect("menstrual_tracker.db")
-    cursor = conn.cursor()
-    cursor.execute("DELETE FROM children WHERE parent_phone = ? AND child_id = ?", (phone_number, child_id))
-    conn.commit()
-    conn.close()
+def check_password_hash(phone_number, password):
+    session = get_session()
+    user = session.query(Parent).filter_by(phone_number=phone_number).first()
+    return check_password_hash(user.password_hash, password) if user else False
 
+def get_user_profile(phone_number):
+    session = get_session()
+    user = session.query(Parent).filter_by(phone_number=phone_number).first()
+    return user if user else None
+
+
+def schedule_appointment(phone_number, issue):
+    session = get_session()
+    appointment = Appointment(
+        phone_number=phone_number,
+        issue=issue,
+        timestamp=datetime.now()
+    )
+    session.add(appointment)
+    session.commit()
+
+def submit_feedback(phone_number, message):
+    session = get_session()
+    feedback = Feedback(
+        phone_number=phone_number,
+        message=message,
+        timestamp=datetime.now()
+    )
+    session.add(feedback)
+    session.commit()
